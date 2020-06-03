@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'gatsby'
 
 import { Headers, Menu, Conteudo, NavIcon } from './styled';
 import Logo from '../../images/logo.png';
@@ -40,7 +39,7 @@ const Header = () => {
 
             <Conteudo open={open}>
                 <ul>
-                    <li><Link to="/" onClick={() => abrir()}>Inicio</Link></li>
+                    <li><a href="https://5gs.netlify.app">5GS</a></li>
                 </ul>
             </Conteudo>
         </Headers>

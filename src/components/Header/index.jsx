@@ -41,9 +41,6 @@ const Header = () => {
             <Conteudo open={open}>
                 <ul>
                     <li><Link to="/" onClick={() => abrir()}>Inicio</Link></li>
-                    <li><Link to="/informacoes" onClick={() => abrir()}>História</Link></li>
-                    <li><Link to="/comparacao" onClick={() => abrir()}>Comparação</Link></li>
-                    <li><Link to="/" onClick={() => abrir()}>Doação</Link></li>
                 </ul>
             </Conteudo>
         </Headers>

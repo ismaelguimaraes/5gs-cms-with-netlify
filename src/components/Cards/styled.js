@@ -1,10 +1,14 @@
 import styled from 'styled-components';
-import { Card, CardImg, CardBody, CardTitle, CardText } from 'reactstrap'
+import { Card, CardImg, CardBody, CardTitle, CardText, CardFooter } from 'reactstrap'
 import { Link } from 'gatsby'
 
 export const CardBlog = styled(Card)`
+    position: relative;
     border: 0;
     overflow: hidden;
+    background-color: transparent;
+    min-height: 437px;
+    max-height: 437px;
 
     &:hover {
         img {
@@ -18,6 +22,15 @@ export const CardImgBlog = styled(CardImg)`
     margin: 0;
     overflow: hidden;
     border-radius: 30px 30px 0 0;
+`
+
+export const CardFooterBlog = styled(CardFooter)`
+    padding: 0;
+    border: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    transform: translate(-50%);
 `
 
 export const CardBodyBlog = styled(CardBody)`

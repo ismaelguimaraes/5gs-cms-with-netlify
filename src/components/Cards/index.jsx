@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { CardBlog, CardImgBlog, CardBodyBlog, CardTitleBlog, CardTextBlog, LinkBlog } from './styled';
+import { CardBlog, CardImgBlog, CardBodyBlog, CardTitleBlog, CardTextBlog, LinkBlog, CardFooterBlog } from './styled';
 
 const CardNoticia = (props) => {
     return (
@@ -10,9 +10,9 @@ const CardNoticia = (props) => {
             <CardBodyBlog>
                 <CardTitleBlog>{props.title}</CardTitleBlog>
                 <CardTextBlog>{props.resume}</CardTextBlog>
-                <div className="d-flex justify-content-center mt-4">
+                <CardFooterBlog className="d-flex justify-content-center">
                     <LinkBlog to={props.src}>Leia mais+</LinkBlog>
-                </div>
+                </CardFooterBlog>
             </CardBodyBlog>
         </CardBlog>
     )

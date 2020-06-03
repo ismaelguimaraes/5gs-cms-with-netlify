@@ -26,6 +26,8 @@ export const Menu = styled.div`
 
     justify-content: space-between;
     align-items: center;
+
+    img { margin: 0; }
 `;
 
 export const NavIcon = styled.div`

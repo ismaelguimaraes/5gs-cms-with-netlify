@@ -20,6 +20,7 @@ const IndexPage = ({ data }) => (
               src={post.node.frontmatter.path}
               srcImagem={post.node.frontmatter.image.childImageSharp.fluid.src}
               title={post.node.frontmatter.title}
+              resume={post.node.frontmatter.resume}
             />
           </Col>
         )) }
@@ -37,6 +38,7 @@ export const pageQuery = graphql`
           frontmatter {
             path
             title
+            resume
             image {
               childImageSharp {
                 fluid {

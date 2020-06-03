@@ -9,8 +9,8 @@ const CardNoticia = (props) => {
             <CardImgBlog top width="100%" src={props.srcImagem} alt={props.title} />
             <CardBodyBlog>
                 <CardTitleBlog>{props.title}</CardTitleBlog>
-                <CardTextBlog>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</CardTextBlog>
-                <div className="d-flex justify-content-center">
+                <CardTextBlog>{props.resume}</CardTextBlog>
+                <div className="d-flex justify-content-center mt-4">
                     <LinkBlog to={props.src}>Leia mais+</LinkBlog>
                 </div>
             </CardBodyBlog>
